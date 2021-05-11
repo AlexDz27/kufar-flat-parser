@@ -7,13 +7,16 @@ use AlexDz27\Curl\Curl;
 $curl = new Curl('https://re.kufar.by/l/kobrin/snyat/kvartiru-dolgosrochno/1k?size=30');
 $response = $curl->getResponse();
 
+echo 'Looking at the flats...' . PHP_EOL;
+
 $foundAllFlatsCount = 0;
 $allFlats = [];
 
 $foundAllFlatsCount = preg_match_all('/<a class="kf-JUGv-e08be" .*?<\/a>/i', $response, $allFlats);
 
-var_dump($foundAllFlatsCount);
-var_dump($allFlats[0]);
+echo "All the flats count: $foundAllFlatsCount" . PHP_EOL;
+
+echo 'Filtering...' . PHP_EOL;
 
 $flatsWithPhoto = [];
 // remove flats with no photo
@@ -34,5 +37,4 @@ foreach ($flatsWithPhoto as $flat) {
 $newFlats = $filteredFlats;
 $newFlatsCount = count($newFlats);
 
-var_dump($newFlatsCount);
-var_dump($newFlats);
+echo "Result: $newFlatsCount new flats" . PHP_EOL;
