@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "77c60cf380a2709d76244ae4d33eb839",
+    "packages": [
+        {
+            "name": "alexdz27/curl",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AlexDz27/curl.git",
+                "reference": "11f81e908985b37cad1900f02979539b10acc1c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AlexDz27/curl/zipball/11f81e908985b37cad1900f02979539b10acc1c7",
+                "reference": "11f81e908985b37cad1900f02979539b10acc1c7",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AlexDz27\\Curl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Alexey Dzyuba",
+                    "email": "alexeydzyuba27@gmail.com"
+                }
+            ],
+            "description": "A class for providing Curl methods",
+            "support": {
+                "issues": "https://github.com/AlexDz27/curl/issues",
+                "source": "https://github.com/AlexDz27/curl/tree/master"
+            },
+            "time": "2019-02-09T12:08:17+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "alexdz27/curl": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
